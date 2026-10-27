@@ -4,6 +4,24 @@ const main = document.querySelector("main");
 const bullets = document.querySelectorAll(".bullets span");
 const images = document.querySelectorAll(".image");
 
+/* ===== TOAST NOTIFICATION FUNCTION ===== */
+function showToast(message, type = "info", duration = 3500) {
+  const container = document.getElementById("toast-container");
+  const toast = document.createElement("div");
+  toast.className = `toast ${type}`;
+
+  const icon = type === "success" ? "✅" : type === "error" ? "❌" : "ℹ️";
+  toast.textContent = `${icon}  ${message}`;
+
+  container.appendChild(toast);
+
+  // Auto-remove with fade-out
+  setTimeout(() => {
+    toast.classList.add("hide");
+    toast.addEventListener("animationend", () => toast.remove());
+  }, duration);
+}
+
 inputs.forEach((inp) => {
   inp.addEventListener("focus", () => {
     inp.classList.add("active");
@@ -46,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Fungsi untuk registrasi (menyimpan data ke Local Storage)
   if (signUpForm) {
     signUpForm.addEventListener("submit", (e) => {
-      e.preventDefault(); // Mencegah reload halaman default form
+      e.preventDefault();
 
       const username = signUpForm.querySelector("input[type='text']").value;
       const email = signUpForm.querySelector("input[type='email']").value;
@@ -54,7 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // Validasi input kosong
       if (!username || !email || !password) {
-        alert("Harap isi semua field!");
+        showToast("Harap isi semua field!", "error");
         return;
       }
 
@@ -63,12 +81,14 @@ document.addEventListener("DOMContentLoaded", () => {
       const isExisting = users.some((user) => user.username === username);
 
       if (isExisting) {
-        alert("Username sudah terdaftar! Silakan gunakan username lain.");
+        showToast("Username sudah terdaftar! Silakan gunakan username lain.", "error");
       } else {
         users.push({ username, email, password });
         localStorage.setItem("users", JSON.stringify(users));
-        alert("Registrasi berhasil! Akun telah dibuat.");
-        window.location.href = "../Main/index.html"; // Redirect ke halaman utama setelah registrasi
+        showToast("Registrasi berhasil! Akun telah dibuat.", "success");
+        setTimeout(() => {
+          window.location.href = "../Main/index.html";
+        }, 1500);
       }
     });
   }
@@ -76,7 +96,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Fungsi untuk login (memeriksa data dari Local Storage)
   if (signInForm) {
     signInForm.addEventListener("submit", (e) => {
-      e.preventDefault(); // Mencegah reload halaman default form
+      e.preventDefault();
 
       const username = signInForm.querySelector("input[type='text']").value;
       const password = signInForm.querySelector("input[type='password']").value;
@@ -88,10 +108,12 @@ document.addEventListener("DOMContentLoaded", () => {
       );
 
       if (isValidUser) {
-        alert("Login berhasil!");
-        window.location.href = "../Main/index.html"; // Redirect ke halaman utama setelah login
+        showToast("Login berhasil! Mengalihkan...", "success");
+        setTimeout(() => {
+          window.location.href = "../Main/index.html";
+        }, 1500);
       } else {
-        alert("Username atau password salah!");
+        showToast("Username atau password salah!", "error");
       }
     });
   }

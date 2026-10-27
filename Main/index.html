@@ -12,20 +12,20 @@
 
      <!--=============== CSS ===============-->
     <link rel="stylesheet" href="style.css">
-    <title>Welcome Vazz Site</title>
+    <title>Shin — Web Developer Portfolio</title>
 </head>
 <body>
     <header class="header" id="header">
         <nav class="nav container">
         <a href="#"class="nav__logo">
-            <span class="nav__logo-circle">V</span>
-            <span class="nav__logo-name">Vashin.</span>
+            <span class="nav__logo-circle">S</span>
+            <span class="nav__logo-name">Shin.</span>
         </a>
 
         <div class="nav__menu" id="nav-menu">
             <span class="nav__title">Menu</span>
 
-            <h3 class="nav__name">Vazz</h3>
+            <h3 class="nav__name">Shin</h3>
 
             <ul class="nav__list">
                 <li class="nav__item">
@@ -68,13 +68,19 @@
        <!--==================== HOME ====================-->
        <section class="home section" id="home">
           <div class="home__container container grid">
-            <h1 class="home__name">
-                Vazz Shin
-            </h1>
+            <div class="home__title-box">
+                <div class="home__status">
+                    <span class="status__dot"></span>
+                    <span class="status__text">Available for Freelance & Work</span>
+                </div>
+                <h1 class="home__name">
+                    Shin
+                </h1>
+            </div>
 
             <div class="home__perfil">
                 <div class="home__image">
-                    <img src="assets/img/home-perfil.jpg" alt="image" class="home__img" id="theme-image">
+                    <img src="assets/img/home-perfil.jpg" alt="Shin - Profile" class="home__img" id="theme-image">
                     <div class="home__shadow"></div>
 
                     <img src="assets/img/curved-arrow.svg" alt="" class="home__arrow">    
@@ -84,15 +90,15 @@
                 </div>
 
                 <div class="home__social">
-                    <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
+                    <a href="https://www.instagram.com/" target="_blank" class="home__social-link" aria-label="Instagram">
                         <i class="ri-instagram-line"></i>
                     </a>
 
-                    <a href="" target="_blank" class="home__social-link">
+                    <a href="https://www.linkedin.com/" target="_blank" class="home__social-link" aria-label="LinkedIn">
                         <i class="ri-linkedin-box-line"></i>
                     </a>
 
-                    <a href="https://github.com/" target="_blank" class="home__social-link">
+                    <a href="https://github.com/Vazz-B" target="_blank" class="home__social-link" aria-label="GitHub">
                         <i class="ri-github-line"></i>
                     </a>
                 </div>
@@ -100,10 +106,19 @@
 
             <div class="home__info">
                 <p class="home__description">
-                    <b>Web Developer</b>, with knowledge in web 
-                    development and design, I offer the best 
-                    projects resulting in quality work.
+                    <b>Web Developer</b>, with passion in creating modern, 
+                    intuitive, and responsive digital experiences. I deliver 
+                    clean code and visually engaging interfaces.
                 </p>
+
+                <div class="home__buttons">
+                    <a href="#contact" class="button">
+                        <i class="ri-send-plane-line"></i> Contact Me
+                    </a>
+                    <a href="#projects" class="button button__secondary">
+                        <i class="ri-folder-line"></i> View Projects
+                    </a>
+                </div>
 
                 <a href="#about" class="home__scroll">
                     <div class="home__scroll-box">
@@ -125,7 +140,7 @@
 
             <div class="about__perfil">
                 <div class="about__image">
-                    <img src="assets/img/about-perfil.jpg" alt="image" class="about__img">
+                    <img src="assets/img/about-perfil.jpg" alt="About Shin" class="about__img">
 
                     <div class="about__shadow"></div>
 
@@ -137,27 +152,61 @@
 
             <div class="about__info">
                 <p class="about__description">
-                    Passionate about creating <b>Web Pages</b> with 
-                    <b>UI/UX User Interface</b>, I have years of 
-                    experience and many clients are happy with 
-                    the projects carried out.
+                    Passionate about crafting <b>High-Performance Web Pages</b> with 
+                    clean <b>UI/UX Design</b>. I combine aesthetics with solid functionality 
+                    to build seamless digital solutions.
                 </p>
 
-                <ul class="about__list">
-                    <li class="about__item">
-                        <b>My Skills Are:</b> HTML, CSS, JavaScript, 
-                        React, Git & GitHub, Bootstrap, Flutter & 
-                        Figma. 
-                    </li>
-                </ul>
+                <!-- Visual Tech Stack Grid -->
+                <div class="about__skills">
+                    <h4 class="about__skills-title">Tech Stack & Tools</h4>
+                    <div class="about__skills-grid">
+                        <div class="skill__badge" title="HTML5">
+                            <i class="ri-html5-fill"></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="skill__badge" title="CSS3">
+                            <i class="ri-css3-fill"></i>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="skill__badge" title="JavaScript">
+                            <i class="ri-javascript-fill"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill__badge" title="React">
+                            <i class="ri-reactjs-line"></i>
+                            <span>React</span>
+                        </div>
+                        <div class="skill__badge" title="Flutter">
+                            <i class="ri-flutter-fill"></i>
+                            <span>Flutter</span>
+                        </div>
+                        <div class="skill__badge" title="Figma">
+                            <i class="ri-palette-line"></i>
+                            <span>Figma</span>
+                        </div>
+                        <div class="skill__badge" title="Bootstrap">
+                            <i class="ri-bootstrap-line"></i>
+                            <span>Bootstrap</span>
+                        </div>
+                        <div class="skill__badge" title="Git & GitHub">
+                            <i class="ri-github-fill"></i>
+                            <span>Git</span>
+                        </div>
+                    </div>
+                </div>
 
                 <div class="about__buttons">
                     <a href="#contact" class="button">
                         <i class="ri-send-plane-line"></i> Contact Me
                     </a>
 
-                    <a href="https://www.linkedin.com/feed/" target="_blank" class="button__ghost">
+                    <a href="https://www.linkedin.com/" target="_blank" class="button__ghost" aria-label="LinkedIn Profile">
                         <i class="ri-linkedin-box-line"></i>
+                    </a>
+
+                    <a href="https://github.com/Vazz-B" target="_blank" class="button__ghost" aria-label="GitHub Profile">
+                        <i class="ri-github-line"></i>
                     </a>
                 </div>
             </div>
@@ -165,7 +214,7 @@
        </section>
 
        <!--==================== SERVICES ====================-->
-       <section class="services section">
+       <section class="services section" id="services">
           <h2 class="section__title-2">
             <span>Services.</span>
           </h2>
@@ -183,9 +232,8 @@
                     <h2 class="services__title">Web Design</h2>
 
                     <p class="services__description">
-                        A simple yet attractive, elegant and beautiful web design with an 
-                        interface that is intuitive, efficient 
-                        and enjoyable to use by users.
+                        Attractive, elegant, and intuitive user interfaces designed in Figma with 
+                        strong focus on usability, visual hierarchy, and delightful user experience.
                     </p>
                 </div>
             </article>
@@ -199,12 +247,11 @@
                         <i class="ri-code-box-line"></i>
                     </div>
 
-                    <h2 class="services__title">Development</h2>
+                    <h2 class="services__title">Web Development</h2>
 
                     <p class="services__description">
-                        Custom web development tailored to your 
-                        specifications, designed to provide a 
-                        flawless user experience.
+                        Custom frontend & web application development built with clean code, 
+                        responsive layouts, and high performance across all modern devices.
                     </p>
                 </div>
             </article>
@@ -218,11 +265,11 @@
                         <i class="ri-smartphone-line"></i>
                     </div>
 
-                    <h2 class="services__title">Mobile Legend
-                    </h2>
+                    <h2 class="services__title">Mobile & Responsive</h2>
 
                     <p class="services__description">
-                        Entertainment together with the owner playing mobile legend games at will anytime and anywhere
+                        Mobile-first solutions and cross-platform mobile apps with Flutter, 
+                        providing smooth animations and seamless touch-friendly interactions.
                     </p>
                 </div>
             </article>
@@ -235,153 +282,186 @@
             <span>Projects.</span>
           </h2>
 
+          <!-- Projects Category Filter Tabs -->
+          <div class="projects__filters container">
+              <button class="projects__filter-btn active-filter" data-filter="all">All</button>
+              <button class="projects__filter-btn" data-filter="web">Web App</button>
+              <button class="projects__filter-btn" data-filter="uiux">UI/UX Design</button>
+              <button class="projects__filter-btn" data-filter="mobile">Mobile</button>
+          </div>
+
           <div class="projects__container container grid">
-            <article class="projects__card">
+            <!-- Project 1 -->
+            <article class="projects__card" data-category="web" data-id="1">
                 <div class="projects__image">
-                    <img src="assets/img/project-1.jpg" alt="image" class="projects__img">
+                    <img src="assets/img/project-1.jpg" alt="Guest House Booking" class="projects__img">
 
-                    <a href="#" class="projects__button button">
+                    <button class="projects__button button project-view-btn" data-id="1" aria-label="View Guest House Project Details">
                         <i class="ri-arrow-right-up-line"></i>
-                    </a>
+                    </button>
                 </div>
                 <div class="projects__content">
-                    <h3 class="projects__subtitle">Place</h3>
-                    <h2 class="projects__title">Guest House</h2>
+                    <div class="projects__tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <h3 class="projects__subtitle">Web App</h3>
+                    <h2 class="projects__title">Guest House Booking</h2>
 
                     <p class="projects__description">
-                        Project that you carry out in the design 
-                        and structure of the layout, showing the 
-                        design at the client's request.
+                        Hospitality reservation platform with interactive room availability, 
+                        photo gallery preview, and automated booking inquiry form.
                     </p>
                 </div>
 
                 <div class="projects__buttons">
-                    <a href="https://github.com/" target="_blank" class="projects__link">
-                        <i class="ri-github-line"></i> View
+                    <a href="https://github.com/Vazz-B" target="_blank" class="projects__link">
+                        <i class="ri-github-line"></i> Code
                     </a>
 
-                    <a href="https://dribbble.com/shots" target="_blank" class="projects__link">
-                        <i class="ri-dribbble-line"></i> View
+                    <a href="#projects" class="projects__link project-view-btn" data-id="1">
+                        <i class="ri-external-link-line"></i> Details
                     </a>
                 </div>
             </article>
 
-            <article class="projects__card">
+            <!-- Project 2 -->
+            <article class="projects__card" data-category="uiux" data-id="2">
                 <div class="projects__image">
-                    <img src="assets/img/project-2.jpg" alt="image" class="projects__img">
+                    <img src="assets/img/project-2.jpg" alt="Orca Paper Stationery" class="projects__img">
 
-                    <a href="#" class="projects__button button">
+                    <button class="projects__button button project-view-btn" data-id="2" aria-label="View Orca Paper Project Details">
                         <i class="ri-arrow-right-up-line"></i>
-                    </a>
+                    </button>
                 </div>
                 <div class="projects__content">
-                    <h3 class="projects__subtitle">Art</h3>
-                    <h2 class="projects__title">Orca Paper</h2>
+                    <div class="projects__tags">
+                        <span>Figma</span>
+                        <span>UI/UX</span>
+                        <span>Branding</span>
+                    </div>
+                    <h3 class="projects__subtitle">UI/UX Design</h3>
+                    <h2 class="projects__title">Orca Paper Stationery</h2>
 
                     <p class="projects__description">
-                        Project that you carry out in the design 
-                        and structure of the layout, showing the 
-                        design at the client's request.
+                        Minimalist e-commerce interface for artisanal paper and notebooks with 
+                        clean editorial typography and high-conversion checkout flow.
                     </p>
                 </div>
 
                 <div class="projects__buttons">
-                    <a href="https://github.com/" target="_blank" class="projects__link">
-                        <i class="ri-github-line"></i> View
+                    <a href="https://github.com/Vazz-B" target="_blank" class="projects__link">
+                        <i class="ri-github-line"></i> Code
                     </a>
 
-                    <a href="https://dribbble.com/shots" target="_blank" class="projects__link">
-                        <i class="ri-dribbble-line"></i> View
+                    <a href="#projects" class="projects__link project-view-btn" data-id="2">
+                        <i class="ri-external-link-line"></i> Details
                     </a>
                 </div>
             </article>
 
-            <article class="projects__card">
+            <!-- Project 3 -->
+            <article class="projects__card" data-category="web" data-id="3">
                 <div class="projects__image">
-                    <img src="assets/img/project-3.jpg" alt="image" class="projects__img">
+                    <img src="assets/img/project-3.jpg" alt="Fast Food Delivery" class="projects__img">
 
-                    <a href="#" class="projects__button button">
+                    <button class="projects__button button project-view-btn" data-id="3" aria-label="View Fast Food Project Details">
                         <i class="ri-arrow-right-up-line"></i>
-                    </a>
+                    </button>
                 </div>
                 <div class="projects__content">
-                    <h3 class="projects__subtitle">Spot</h3>
-                    <h2 class="projects__title">Fast Food</h2>
+                    <div class="projects__tags">
+                        <span>React</span>
+                        <span>Tailwind</span>
+                        <span>API</span>
+                    </div>
+                    <h3 class="projects__subtitle">Web App</h3>
+                    <h2 class="projects__title">Fast Food Express</h2>
 
                     <p class="projects__description">
-                        Project that you carry out in the design 
-                        and structure of the layout, showing the 
-                        design at the client's request.
+                        Dynamic culinary delivery web app featuring real-time menu filters, 
+                        cart persistence with LocalStorage, and order tracking dashboard.
                     </p>
                 </div>
 
                 <div class="projects__buttons">
-                    <a href="https://github.com/" target="_blank" class="projects__link">
-                        <i class="ri-github-line"></i> View
+                    <a href="https://github.com/Vazz-B" target="_blank" class="projects__link">
+                        <i class="ri-github-line"></i> Code
                     </a>
 
-                    <a href="https://dribbble.com/shots" target="_blank" class="projects__link">
-                        <i class="ri-dribbble-line"></i> View
+                    <a href="#projects" class="projects__link project-view-btn" data-id="3">
+                        <i class="ri-external-link-line"></i> Details
                     </a>
                 </div>
             </article>
 
-            <article class="projects__card">
+            <!-- Project 4 -->
+            <article class="projects__card" data-category="mobile" data-id="4">
                 <div class="projects__image">
-                    <img src="assets/img/project-4.jpg" alt="image" class="projects__img">
+                    <img src="assets/img/project-4.jpg" alt="Coffee Delivery Mobile" class="projects__img">
 
-                    <a href="#" class="projects__button button">
+                    <button class="projects__button button project-view-btn" data-id="4" aria-label="View Coffee Delivery Project Details">
                         <i class="ri-arrow-right-up-line"></i>
-                    </a>
+                    </button>
                 </div>
                 <div class="projects__content">
-                    <h3 class="projects__subtitle">Place</h3>
-                    <h2 class="projects__title">Coffee Delivery</h2>
+                    <div class="projects__tags">
+                        <span>Flutter</span>
+                        <span>Dart</span>
+                        <span>Mobile</span>
+                    </div>
+                    <h3 class="projects__subtitle">Mobile App</h3>
+                    <h2 class="projects__title">Coffee Delivery App</h2>
 
                     <p class="projects__description">
-                        Project that you carry out in the design 
-                        and structure of the layout, showing the 
-                        design at the client's request.
+                        Cross-platform mobile ordering application with customizable drink sizes, 
+                        pickup scheduler, and smooth micro-interactions.
                     </p>
                 </div>
 
                 <div class="projects__buttons">
-                    <a href="https://github.com/" target="_blank" class="projects__link">
-                        <i class="ri-github-line"></i> View
+                    <a href="https://github.com/Vazz-B" target="_blank" class="projects__link">
+                        <i class="ri-github-line"></i> Code
                     </a>
 
-                    <a href="https://dribbble.com/shots" target="_blank" class="projects__link">
-                        <i class="ri-dribbble-line"></i> View
+                    <a href="#projects" class="projects__link project-view-btn" data-id="4">
+                        <i class="ri-external-link-line"></i> Details
                     </a>
                 </div>
             </article>
 
-            <article class="projects__card">
+            <!-- Project 5 -->
+            <article class="projects__card" data-category="uiux" data-id="5">
                 <div class="projects__image">
-                    <img src="assets/img/project-5.jpg" alt="image" class="projects__img">
+                    <img src="assets/img/project-5.jpg" alt="Barbershop Rich" class="projects__img">
 
-                    <a href="#" class="projects__button button">
+                    <button class="projects__button button project-view-btn" data-id="5" aria-label="View Barbershop Rich Project Details">
                         <i class="ri-arrow-right-up-line"></i>
-                    </a>
+                    </button>
                 </div>
                 <div class="projects__content">
-                    <h3 class="projects__subtitle">Place</h3>
+                    <div class="projects__tags">
+                        <span>UI/UX</span>
+                        <span>Figma</span>
+                        <span>Dark Mode</span>
+                    </div>
+                    <h3 class="projects__subtitle">UI/UX Design</h3>
                     <h2 class="projects__title">Barbershop Rich</h2>
 
                     <p class="projects__description">
-                        Project that you carry out in the design 
-                        and structure of the layout, showing the 
-                        design at the client's request.
+                        Sleek dark-themed appointment scheduling portal designed for premium 
+                        gentlemen barbershops with stylist selection and service pricing.
                     </p>
                 </div>
 
                 <div class="projects__buttons">
-                    <a href="https://github.com/" target="_blank" class="projects__link">
-                        <i class="ri-github-line"></i> View
+                    <a href="https://github.com/Vazz-B" target="_blank" class="projects__link">
+                        <i class="ri-github-line"></i> Code
                     </a>
 
-                    <a href="https://dribbble.com/shots" target="_blank" class="projects__link">
-                        <i class="ri-dribbble-line"></i> View
+                    <a href="#projects" class="projects__link project-view-btn" data-id="5">
+                        <i class="ri-external-link-line"></i> Details
                     </a>
                 </div>
             </article>
@@ -397,14 +477,24 @@
                 </h2>
 
                 <p class="contact__description-1">
-                    I will read all emails. Send me any 
-                    message you want and I'll get back to you.
+                    Have a project in mind or want to collaborate? Send me a message and I will get back to you promptly.
                 </p>
 
                 <p class="contact__description-2">
-                    I need your <b>Name</b> and <b>Email Address</b>, but 
-                    you won't receive anything other than your reply.
+                    You can reach me directly through this form or via quick contact links below.
                 </p>
+
+                <!-- Quick Direct Contact Links -->
+                <div class="contact__direct">
+                    <a href="https://wa.me/" target="_blank" class="contact__direct-item" aria-label="Direct WhatsApp">
+                        <i class="ri-whatsapp-line"></i>
+                        <span>WhatsApp Chat</span>
+                    </a>
+                    <a href="mailto:shin@example.com" class="contact__direct-item" aria-label="Direct Email">
+                        <i class="ri-mail-line"></i>
+                        <span>Send Direct Email</span>
+                    </a>
+                </div>
 
                 <div class="geometric-box"></div>
             </div>
@@ -439,8 +529,9 @@
 
                     <p class="contact__message" id="contact-message"></p>
 
-                    <button type="submit" class="contact__button button">
-                        <i class="ri-send-plane-line"></i> Send Message 
+                    <button type="submit" class="contact__button button" id="contact-button">
+                        <i class="ri-send-plane-line" id="button-icon"></i> 
+                        <span id="button-text">Send Message</span>
                     </button>
                 </form>
             </div>
@@ -451,24 +542,24 @@
                 <div class="contact__social-data">
                     <div>
                         <p class="contact__social-description-1">
-                            Does not send emails
+                            Find me on social media
                         </p>
 
                         <p class="contact__social-description-2">
-                            Write me on my social networks
+                            Let's connect & stay in touch
                         </p>
                     </div>
 
                     <div class="contact__social-links">
-                        <a href="https://web.facebook.com/" target="_blank" class="contact__social-link">
-                            <i class="ri-facebook-circle-line"></i>
+                        <a href="https://github.com/Vazz-B" target="_blank" class="contact__social-link" aria-label="GitHub Profile">
+                            <i class="ri-github-line"></i>
                         </a>
 
-                        <a href="https://www.instagram.com/" target="_blank" class="contact__social-link">
+                        <a href="https://www.instagram.com/" target="_blank" class="contact__social-link" aria-label="Instagram Profile">
                             <i class="ri-instagram-line"></i>
                         </a>
 
-                        <a href="https://www.linkedin.com/feed/" target="_blank" class="contact__social-link">
+                        <a href="https://www.linkedin.com/" target="_blank" class="contact__social-link" aria-label="LinkedIn Profile">
                             <i class="ri-linkedin-box-line"></i>
                         </a>
                     </div>
@@ -477,6 +568,22 @@
         </div>
        </section>
     </main>
+
+    <!--========== INTERACTIVE PROJECT MODAL ==========-->
+    <div class="project__modal" id="project-modal" aria-hidden="true" role="dialog">
+        <div class="project__modal-backdrop" id="modal-backdrop"></div>
+        <div class="project__modal-card">
+            <button class="project__modal-close" id="modal-close" aria-label="Close modal">
+                <i class="ri-close-line"></i>
+            </button>
+            <div class="project__modal-content" id="modal-content">
+                <!-- Injected via JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!--========== TOAST NOTIFICATION CONTAINER ==========-->
+    <div id="toast-container" aria-live="polite"></div>
 
     <!--==================== FOOTER ====================-->
     <footer class="footer">
@@ -497,7 +604,7 @@
 
         <span class="footer__copy">
             &#169; All Rights Reserved By 
-            <a href="#">Vazzcode.</a>
+            <a href="#">Shincode.</a>
         </span>
        </div>
     </footer>
